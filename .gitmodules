@@ -1,0 +1,9 @@
+[submodule "git-apps/discover"]
+	path = git-apps/discover
+	url = https://github.com/leebaird/discover
+[submodule "git-apps/SecLists"]
+	path = git-apps/SecLists
+	url = https://github.com/danielmiessler/SecLists
+[submodule "git-apps/Fingerprinter"]
+	path = git-apps/Fingerprinter
+	url = https://github.com/erwanlr/Fingerprinter
