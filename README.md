@@ -27,14 +27,14 @@ git submodule add <repoURL>
 The tools will be available inside the container.
 
 ## Volumes
-/root - Root home directory
-/var/lib/postgresql - PostgreSQL database files (persisting Metasploit database)
-/opt/tools - Bind to *git-apps* directory
+- /root - Root home directory
+- /var/lib/postgresql - PostgreSQL database files (persisting Metasploit database)
+- /opt/tools - Bind to *git-apps* directory
 
 ## Exposed Ports
-(Container -> Host)
-9050 -> 9050 - Tor Network
-80 -> 8000 - Apache2 Web Server
+- (Container -> Host)
+- 9050 -> 9050 - Tor Network
+- 80 -> 8000 - Apache2 Web Server
 
 ## Updating
 There's a script to update the system and the git apps inside the image.
@@ -44,10 +44,11 @@ To update the dependencies, run (from within the container):
 update
 ```
 
-To persist these updates (if you don't do that, all updates will be lost when the container is shutdown), run:
+To persist these updates (if you don't do that, all updates will be lost when the container is shutdown), run the following command on the host (with the container running):
 ```sh
 kali-commit
 ```
 
 ## Changelog
-- v1.0.0 - Initial Setup
+- v1.0 - Initial Setup
+- v1.1 - Setup script edit the run template to generate the full path of git-apps directory
