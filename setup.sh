@@ -8,5 +8,6 @@ echo "alias kali='$PWD/run.sh'" >> ~/.zshrc
 echo "alias kali-commit='$PWD/commit.sh'" >> ~/.zshrc
 
 cat run_template.sh | sed -E "s#src=path#src=$PWD#g" > run.sh
+chmod +x run.sh
 
 echo "Now run 'source ~/.zshrc' and './build.sh'"

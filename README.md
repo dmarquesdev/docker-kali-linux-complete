@@ -52,3 +52,4 @@ kali-commit
 ## Changelog
 - v1.0 - Initial Setup
 - v1.1 - Setup script edit the run template to generate the full path of git-apps directory
+- v1.2 - Added execute permission to the generated `run.sh` script on the setup script
