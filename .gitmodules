@@ -7,3 +7,6 @@
 [submodule "git-apps/Fingerprinter"]
 	path = git-apps/Fingerprinter
 	url = https://github.com/erwanlr/Fingerprinter
+[submodule "git-apps/testssl.sh"]
+	path = git-apps/testssl.sh
+	url = https://github.com/drwetter/testssl.sh

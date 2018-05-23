@@ -25,4 +25,11 @@ VOLUME /root
 VOLUME /var/lib/postgresql
 VOLUME /opt/tools
 
+RUN ARACHNI_LINK=$(curl -s http://www.arachni-scanner.com/download/ | grep linux-x86_64.tar.gz\" | cut -d "\"" -f2) \
+&& curl -sL $ARACHNI_LINK | tar xvz -C /opt \
+&& ARACHNI_VERSION=$(echo $ARACHNI_LINK | cut -d "-" -f2,3) \
+&& mv /opt/arachni-$ARACHNI_VERSION /opt/arachni
+
+EXPOSE 9292
+
 ENTRYPOINT [ "/opt/docker-entrypoint.sh" ]
